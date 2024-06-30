@@ -29,9 +29,9 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/2e9432d01357
 CODE = (environ.get('CODE', 'https://graph.org/file/ff395a7861f46c9c14f00.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'ziplinker.net'))
-STREAM_API = (environ.get('STREAM_API', 'ae0832f39e24094a0661626a792e6a2b8880e310'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/HowToOpenLinkHP/69'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'https://publicearn.com'))
+STREAM_API = (environ.get('STREAM_API', '7d3be3c42438436ade8b7a491d42a4ffcad6be5b'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Thepower88links/8'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
