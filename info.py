@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://graph.org/file/ff395a7861f46c9c14f00.jpg'))
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'https://publicearn.com'))
 STREAM_API = (environ.get('STREAM_API', '7d3be3c42438436ade8b7a491d42a4ffcad6be5b'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Thepower88links/8'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Thepower88links/15'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2015261342 6907639205 7030439873').split()]
@@ -56,7 +56,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Thepower88links/8') # How to open tutorial link for verification
+HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Thepower88links/15') # How to open tutorial link for verification
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
