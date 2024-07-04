@@ -65,7 +65,6 @@ IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8190")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+svB2SBPpSgw5ZGE1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Movies_TimeZZ')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Thepower88links/8') # Tutorial video link for opening shortlink website 
@@ -104,7 +103,7 @@ if 'DYNO' in environ:
     APP_NAME = environ.get('APP_NAME')
 else:
     ON_HEROKU = False
-BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '64.227.169.61'))
+BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '64.227.169.61:8190'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://{}/".format(FQDN, PORT)
